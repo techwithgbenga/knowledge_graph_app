@@ -1,0 +1,8 @@
+streamlit
+sqlalchemy
+pdfminer.six
+spacy
+networkx
+pyvis
+faiss-cpu
+openai
