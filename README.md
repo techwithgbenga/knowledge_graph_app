@@ -3,27 +3,27 @@ An application that lets you ingest documents (PDFs, Markdown, text), build a se
 
 ## Key Features
 - Document Ingestion
--- Support for PDF, Markdown, and plain-text files
--- Chunking & metadata extraction (author, date, headings)
+  * Support for PDF, Markdown, and plain-text files
+  * Chunking & metadata extraction (author, date, headings)
 
 - Knowledge Graph Construction
--- Entity & relation extraction with spaCy or OpenAI’s NER
--- Store as a NetworkX graph (nodes = entities, edges = relations)
+  * Entity & relation extraction with spaCy or OpenAI’s NER
+  * Store as a NetworkX graph (nodes = entities, edges = relations)
 
 - Vector Store & Semantic Search
--- Generate embeddings for each text chunk with OpenAI or Hugging Face
--- Index embeddings in FAISS for fast similarity search
--- Query interface returns top-k relevant chunks
+  * Generate embeddings for each text chunk with OpenAI or Hugging Face
+  * Index embeddings in FAISS for fast similarity search
+  * Query interface returns top-k relevant chunks
 
 - Streamlit UI
--- Upload new documents
--- Browse extracted graph (interactive network visualization)
--- Search bar with autocomplete and “Did you mean?” suggestions
--- Display retrieved context + graph highlights
+  * Upload new documents
+  * Browse extracted graph (interactive network visualization)
+  * Search bar with autocomplete and “Did you mean?” suggestions
+  * Display retrieved context + graph highlights
 
 - Persistence
--- SQLite (via SQLAlchemy) to store metadata, embeddings, and graph nodes/edges
--- Optionally export/import graph in GraphML
+  * SQLite (via SQLAlchemy) to store metadata, embeddings, and graph nodes/edges
+  * Optionally export/import graph in GraphML
 
 ## Getting Started
 - Clone & Install
@@ -38,10 +38,10 @@ python -m spacy download en_core_web_sm
 streamlit run app.py
 ```
 - Use
--- Upload docs in the sidebar
--- Build graph & index
--- Search semantically
--- Visualize your personal knowledge graph
+  * Upload docs in the sidebar
+  * Build graph & index
+  * Search semantically
+  * Visualize your personal knowledge graph
 
 This Personal Knowledge Graph & Semantic Search Engine is a “powerful” project combining NLP, graph theory, embeddings, and an interactive UI—ideal for publishing on GitHub as a flagship open-source tool.
 
